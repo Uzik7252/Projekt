@@ -7,7 +7,11 @@ public class main {
 
         kostka.sześć_ścian();
 
+<<<<<<< HEAD
 
     }
+=======
+ 
+>>>>>>> 2ca18331ab65f09120361837a47f72e7ba571c51
 
 }
