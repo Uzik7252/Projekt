@@ -1,13 +1,13 @@
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException{
         try {
-            Scanner scan = new Scanner(System.in);
             Gra Gra = new Gra();
-
+            Scanner scan = new Scanner(System.in);
+            Kostka Kostka = new Kostka();
 
 
                 System.out.println("Jeśli chcesz zacząć grę wciśnij '1', Jeśli chcesz wyjść, wcisnij '2'");
@@ -19,13 +19,18 @@ public class main {
                     }
                     case 2 -> {
                         System.out.println("WYJDŹ");
+                        return;
+
                     }
-                    default -> System.out.println("Błąd");
+                    default -> {
+                        System.out.println(Kostka.rzut());
+                        System.out.println("Błąd");
+                    }
                 }
 
 
 
-    } catch (Exception exception) {
+        } catch (Exception exception) {
             System.out.println("Podałeś błędne dane");
         }
 

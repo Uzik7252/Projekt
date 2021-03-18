@@ -1,26 +1,20 @@
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Gracz {
+    private String imię = "Karol";
+    private int zdrowie = 10;
 
-    private String imie;
-    private int zdrowie;
-    private int portfel;
-    private List<String> ekwipunek = new ArrayList<>(5);
-
-    public Gracz(String imie, int zdrowie, int portfel ) {
-        this.imie = imie;
+    public Gracz() {
+        this.imię = imię;
         this.zdrowie = zdrowie;
-        this.portfel = portfel;
-
     }
 
-    public String getImie() {
-        return imie;
+    public String getImię() {
+        return imię;
     }
 
-    public void setImie(String imie) {
-        this.imie = imie;
+    public void setImię(String imię) {
+        this.imię = imię;
     }
 
     public int getZdrowie() {
@@ -31,19 +25,5 @@ public class Gracz {
         this.zdrowie = zdrowie;
     }
 
-    public int getPortfel() {
-        return portfel;
     }
 
-    public void setPortfel(int portfel) {
-        this.portfel = portfel;
-    }
-
-    public List<String> getEkwipunek() {
-        return ekwipunek;
-    }
-
-    public void setEkwipunek(List<String> ekwipunek) {
-        this.ekwipunek = ekwipunek;
-    }
-}
